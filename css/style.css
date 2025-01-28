@@ -1,0 +1,149 @@
+:root{
+    --spotify-light: #FFFFFF;
+    --spotify-plus-button: #a3a3a3;
+    --spotify-light-writes: #7b7d82;
+    --spotify-back-main: #141922;
+    --spotify-upgrade-bar: #080b12;
+    --spotify-Back-side-bar: #000000;
+    --spotify-Back-bottom-bar: #282828;
+    --spotify-hr-bottom: #282828;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Montserrat;
+}
+
+
+
+/* #region column */
+[class^="col"]
+{
+    padding: 1rem 1rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.col{
+    width: auto;
+    flex-basis: auto;
+}
+
+.col-1{
+    width: calc(100%/12*1);
+    
+}
+
+.col-2{
+    width: calc(100% /12 * 2);
+    
+}
+
+.col-3{
+    width: calc(100%/12*3);
+    
+}
+
+.col-4{
+    width: calc(100%/12*4);
+    
+}
+
+.col-5{
+    width: calc(100%/12*5);
+    
+}
+
+.col-6{
+    width: calc(100%/12*6);
+    
+}
+
+.col-7{
+    width: calc(100%/12*7);
+    
+}
+
+.col-8{
+    width: calc(100%/12*8);
+    
+}
+
+.col-9{
+    width: calc(100%/12*9);
+    
+}
+
+.col-10{
+    width: calc(100%/12*10);
+    
+}
+
+.col-11{
+    width: calc(100%/12*11);
+    
+}
+
+.col-12{
+    width: calc(100%/12*12);
+    
+}
+
+/* #endregion column */
+
+.side-bar.col-3{
+
+    background-color: var(--spotify-Back-side-bar);
+    padding: 1rem;
+    padding-right: 2rem;
+    color: var(--spotify-light-writes);
+
+    .logo{
+        padding-bottom: 1rem;
+    }
+
+    ul{
+        list-style: none;
+        padding-bottom: 2rem;
+         
+        li{
+            
+            padding-top: 0.4rem;
+            
+        }
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--spotify-light-writes);
+    }
+
+    h3{
+        color: var(--spotify-light);
+    }
+
+    /* create a playlist */
+
+    .playlist{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .plus{
+        border: none;
+        font-size: 3rem;
+    }
+
+}
