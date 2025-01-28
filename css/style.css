@@ -109,10 +109,20 @@ body
     padding: 1rem;
     padding-right: 2rem;
     color: var(--spotify-light-writes);
+    width: 30vh;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
 
     .logo{
         width: 150px;
         padding-bottom: 1rem;
+    }
+
+    .logo-small{
+        width: 35px;
+        padding-bottom: 1rem;
+        display: none;
     }
 
     ul{
@@ -180,7 +190,74 @@ body
     img{
         background-color: var(--spotify-light-writes);
         width: 20px;
-        border-radius: 50px;
+        border-radius:500px;
     }
     
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 552px) {
+    .side-bar{
+        /* change the side bar dimension */
+        width: 10vw !important; 
+        height: 100vh;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 0 !important;
+
+        
+
+        /* remove big logo and add small logo */ 
+        .logo{
+            display: none;
+        }
+
+        .logo-small{
+            display: block !important;
+        }
+
+        /* remove nav writes and playlist section */
+        ul{
+            li{
+                a{
+                    display: none;
+                }
+            }
+        }
+
+        .responsive-mobile{
+            display: none;
+        }
+
+        /* remove dowload write and user name */
+        hr{
+            display: none;
+        }
+        .download,
+        .user{
+            width: 25px;
+            span{
+                display: none;
+            }
+        }
+
+        .download{
+            width: 15px;
+        }
+
+        .up-side-bar,
+        .down-side-bar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 25px;
+            }
+        }
+    }
 }
