@@ -19,21 +19,18 @@
 body
 {
     font-family: "Open Sans", serif;
+
 }
 
 
 
 
 /* #region column */
-[class^="col"]
-{
-    padding: 1rem 1rem;
-}
+
 
 .row{
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: nowrap;
 }
 
 
@@ -53,7 +50,7 @@ body
 }
 
 .col-3{
-    width: calc(100%/12*3);
+    width: calc(100%/12 * 3);
     
 }
 
@@ -83,7 +80,7 @@ body
 }
 
 .col-9{
-    width: calc(100%/12*9);
+    width: calc(100%/12 * 9);
     
 }
 
@@ -109,10 +106,8 @@ body
     padding: 1rem;
     padding-right: 2rem;
     color: var(--spotify-light-writes);
-    width: 30vh;
-    height: 100vh;
-    overflow-x: auto;
-    overflow-y: auto;
+    width: 25vh;
+    height: 100%;
 
     .logo{
         width: 150px;
@@ -195,7 +190,26 @@ body
     
 }
 
+/* upgrade bar */
+.col-9{
+    width: 100%;
+}
+.top-bar{
+    background-color: var(--spotify-upgrade-bar);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
+.upgrade-button{
+    background-color: var(--spotify-Back-side-bar);
+    color: var(--spotify-light);
+    border: 1px solid var(--spotify-light);
+    border-radius: 50px;
+    padding: 0.8rem 2.5rem;
+}
 
 
 /* responsive */
