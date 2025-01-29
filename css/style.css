@@ -234,9 +234,8 @@ body
 
 /* recently played */
 .main-page{
+
     padding: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
     h2{
         color: var(--spotify-light);
         padding-top: 2rem;
