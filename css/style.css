@@ -163,7 +163,7 @@ body
     gap: 1rem;
 }
 
-/* dowload app */
+/* #region dowload app */
 .download {
     display: flex;
     align-items: center;
@@ -189,8 +189,10 @@ body
     }
     
 }
+/* #endregion dowload app */
 
-/* upgrade bar */
+
+/* #region upgrade bar */
 .col-9{
     width: 100%;
 }
@@ -210,6 +212,56 @@ body
     border-radius: 50px;
     padding: 0.8rem 2.5rem;
 }
+/* #endregion upgrade bar */
+
+/* #region main-page */
+.main{
+    background-color: var(--spotify-back-main);
+}
+
+/* types to liste */
+.types-to-listen{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+   
+    a{
+        text-decoration: none;
+        color: var(--spotify-light-writes);
+    }
+}
+
+/* recently played */
+.main-page{
+    overflow: auto;
+    padding: 1.5rem;
+    h1{
+        color: var(--spotify-light);
+        padding-top: 2rem;
+    }
+
+    span{
+        color: var(--spotify-light-writes);
+    }
+
+    h3{
+        color: var(--spotify-light);
+        padding: 1rem 0;
+    } 
+}
+
+.recently-played{
+    img{
+        max-width: 100%;
+        padding-top: 1.5rem ;
+    }
+    
+    .row{
+        text-align: center;
+        gap: 2rem;        
+    }
+}
+/* #endregion main-page */
 
 
 /* responsive */
