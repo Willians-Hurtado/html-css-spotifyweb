@@ -101,13 +101,17 @@ body
 
 /* #endregion column */
 
+/* #region side bar */
 .side-bar.col-3{
     background-color: var(--spotify-Back-side-bar);
+    display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
     padding-right: 2rem;
     color: var(--spotify-light-writes);
-    width: 25vh;
-    height: 100%;
+    width: 220px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     .logo{
         width: 150px;
@@ -148,12 +152,16 @@ body
         flex-wrap: wrap;
         align-items: center;
         gap: 0.5rem;
-        padding-bottom: 24rem;
+        
+
+        a{
+            border: none;
+            i{
+                font-size: 2.5rem;
+            }
+        }
     }
-    .plus{
-        border: none;
-        font-size: 3rem;
-    }
+    
 
 }
 
@@ -163,7 +171,19 @@ body
     gap: 1rem;
 }
 
+.center-side-bar{
+    h3{
+        padding-bottom: 0.5rem;
+    }
+}
+
+
 /* #region dowload app */
+.down-side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .download {
     display: flex;
     align-items: center;
@@ -191,6 +211,8 @@ body
 }
 /* #endregion dowload app */
 
+/* #endregion side bar */
+
 
 /* #region upgrade bar */
 .col-9{
@@ -198,11 +220,15 @@ body
 }
 .top-bar{
     background-color: var(--spotify-upgrade-bar);
-    height: 10vh;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: sticky;
+    right: 0;
+    top: 0;
+    
 }
 
 .upgrade-button{
@@ -218,6 +244,8 @@ body
 .main{
     background-color: var(--spotify-back-main);
     overflow-y: visible;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
 }
 
 /* types to liste */
@@ -235,7 +263,6 @@ body
 
 /* recently played */
 .main-page{
-
     padding: 1.5rem;
     h2{
         color: var(--spotify-light);
@@ -260,19 +287,25 @@ body
     
     .row{
         text-align: center;
-        gap: 2rem;        
+        gap: 1rem;        
     }
 }
 
 
 /* #endregion main-page */
 
-/* bottom bar */
+/* #region bottom bar */
 .bottom-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100px;
     background-color: var(--spotify-Back-bottom-bar);
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0%;
+    
 }
 
 /* left bottom bar */
@@ -302,7 +335,6 @@ body
 /* center bottom bar */
 .center-bottom-bar{
     width: 400px;
-    height: 100%;
     color: var(--spotify-light);
     display: flex;
     align-items: center;
@@ -371,66 +403,10 @@ body
         font-size: 12px;
     }
 }
+/* #endregion bottom bar */
+
+
 /* responsive */
 @media screen and (max-width: 552px) {
-    .side-bar{
-        /* change the side bar dimension */
-        width: 10vw !important; 
-        height: 100vh;
-        overflow-x: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 1rem 0 !important;
-
-        
-
-        /* remove big logo and add small logo */ 
-        .logo{
-            display: none;
-        }
-
-        .logo-small{
-            display: block !important;
-        }
-
-        /* remove nav writes and playlist section */
-        ul{
-            li{
-                a{
-                    display: none;
-                }
-            }
-        }
-
-        .responsive-mobile{
-            display: none;
-        }
-
-        /* remove dowload write and user name */
-        hr{
-            display: none;
-        }
-        .download,
-        .user{
-            width: 25px;
-            span{
-                display: none;
-            }
-        }
-
-        .download{
-            width: 15px;
-        }
-
-        .up-side-bar,
-        .down-side-bar{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            img{
-                width: 25px;
-            }
-        }
-    }
+    
 }
