@@ -217,6 +217,7 @@ body
 /* #region main-page */
 .main{
     background-color: var(--spotify-back-main);
+    overflow-y: visible;
 }
 
 /* types to liste */
@@ -262,9 +263,114 @@ body
         gap: 2rem;        
     }
 }
+
+
 /* #endregion main-page */
 
+/* bottom bar */
+.bottom-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--spotify-Back-bottom-bar);
+}
 
+/* left bottom bar */
+.left-bottom-bar{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    color: var(--spotify-light-writes);
+
+    h4{
+       color: var(--spotify-light); 
+    }
+
+    img{
+        padding-right: 1rem;
+    }
+
+    .name{
+        padding-right: 2rem;
+    }
+
+    i{
+        padding-right: 1rem;
+    }      
+}
+
+/* center bottom bar */
+.center-bottom-bar{
+    width: 400px;
+    height: 100%;
+    color: var(--spotify-light);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    span{
+        font-size: 10px;
+    }
+}
+.select{
+    width: 150px;
+    color: var(--spotify-light);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.fa-solid{
+    font-size: 15px;
+}
+
+.fa-circle-play{
+    font-size: 20px;
+}
+
+.music{
+    width: 300px;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 50px;
+}
+
+.time-music{
+    width: 25%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #c1c1c1;
+}
+
+.time-bar-music{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* right bottom bar */
+.right-bottom-bar{
+    display: flex;
+    align-items: center;
+    color: var(--spotify-light);   
+}
+
+.volume{
+    width: 100px;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 50px;
+}
+
+.volume-icons{
+    display: flex;
+    align-items: center;
+    i{
+        padding-right: 0.5rem;
+        font-size: 12px;
+    }
+}
 /* responsive */
 @media screen and (max-width: 552px) {
     .side-bar{
