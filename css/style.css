@@ -223,6 +223,7 @@ body
 .types-to-listen{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
    
     a{
@@ -233,9 +234,10 @@ body
 
 /* recently played */
 .main-page{
-    overflow: auto;
     padding: 1.5rem;
-    h1{
+    display: flex;
+    flex-wrap: wrap;
+    h2{
         color: var(--spotify-light);
         padding-top: 2rem;
     }
