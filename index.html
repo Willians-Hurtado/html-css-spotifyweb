@@ -29,17 +29,17 @@
                     <nav>
                         <ul>
                             <li>
-                            <img width="20px" src="./img/home.svg" alt="">
-                            <a href="">Home</a>
+                            <img width="25px" class="home" src="./img/home.svg" alt="">
+                            <a class="home" href="">Home</a>
                             
                             </li>
                             <li>
-                                <img width="20px" src="./img/search.svg" alt="">
+                                <img width="25px" src="./img/search.svg" alt="">
                                 <a href="">Cerca</a>
                             
                             </li>
                             <li>
-                                <img width="20px" src="./img/libreria.svg" alt="">
+                                <img width="25px" src="./img/libreria.svg" alt="">
                                 <a href="">La tua libreria</a>
                             
                             </li>
@@ -92,7 +92,9 @@
 
                 <!-- upgrade bar -->
                 <div class="top-bar">
-                    <button class="upgrade-button">EFFETTUA L'APGRADE</button>
+                    <button class="upgrade-button">
+                        EFFETTUA L'APGRADE
+                    </button>
                 </div>
 
                 <!-- main spotify page -->
@@ -100,64 +102,147 @@
 
                     <!-- types to listen -->
                     <div class="types-to-listen">
-                        <span><a href="">IN EVIDENZA</a></span>
+                        <span><a class="hr-select" href="">IN EVIDENZA</a></span>
+                        
                         <span><a href="">PODCAST</a></span>
                         <span><a href="">CLASSIFICHE</a></span>
                         <span><a href="">GENERI E MOOD</a></span>
                         <span><a href="">NUOVE USCITE</a></span>
                         <span><a href="">SCOPRI</a></span>
                     </div>
-                    
+
                     <!-- recently played -->
-                    <div class="recently-played">
                         <h2>Recently played</h2>
                         <div class="row">
                             <div class="col">
-                                <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="play">
+                                   <img src="./img/metal_lifting.jpg" alt="">
+                                    <div  class="overlay">
+                                        
+                                        <i class="fa-regular fa-circle-play">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                        </i>
+                                        
+                                    </div>   
+                                </div>
                                 <h3>Heavy Metal</h3>
                                 <span>Subtitle</span>
                             </div>
                             <div class="col">
-                                <img src="./img/stranger.jpeg" alt="">
+                                <div class="play">
+                                    <img src="./img/stranger.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                        </i>
+                                        
+                                    </div>
+                                    
+                                </div>
                                 <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                 <span>Kyle Dixon & Michael Stein</span>
+                                
                             </div>
                             <div class="col">
-                                <img src="./img/aquietplace.jpeg" alt="">
+                                <div class="play">
+                                    <img src="./img/aquietplace.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fa-regular fa-circle-play">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                        </i>
+                                        
+                                    </div>
+                                    
+                                </div>
                                 <h3>A quiet place</h3>
                                 <span>Subtitle</span>
                             </div>
                             <div class="col">
-                                <img src="./img/split.jpeg" alt="">
+                                <div class="play">
+                                    <img src="./img/split.jpeg" alt="">
+                                    <div class="overlay">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                            </i>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
                                 <h3>Split</h3>
                                 <span>Subtitle</span>
                             </div>
                             <div class="col">
-                                <img src="./img/cure.jpeg" alt="">
-                                <h3>A cure for wellnes</h3>
-                                <span>Subtitle</span>
+                                
+                                <div class="play">
+                                    <img src="./img/cure.jpeg" alt="">
+                                    <div class="overlay">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            <h3>A cure for wellnes</h3>
+                            <span>Subtitle</span>
                             </div>
+                            
                             <div class="col">
-                                <img src="./img/sinister.jpeg" alt="">
+                                <div class="play">
+                                    <img src="./img/sinister.jpeg" alt="">
+                                    <div class="overlay">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <h3>Sinister</h3>
                                 <span>Subtitle</span>
                             </div>
                         </div>
-                    </div>
 
                     <!-- created for john doe-->
-                    <div class="recently-played">
+                    <div>
                         <h2>Creato per John Doe</h2>
                         <span>Più ascolti, più accurati saranno i suggerimenti</span>
-                        <div class="row">
-                            <div class="col">
-                                <img src="./img/radar.jpeg" alt="">
-                                <h3>Release Radar</h3>
-                                    
+                    </div>
+                        
+                        <div class="row">    
+                            <div class="col ">
+                                <div class="play">
+                                    <img class="" src="./img/radar.jpeg" alt="">
+                                    <div class="overlay">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                                 
+                                <h3>Release Radar</h3>     
                             </div>
-                            <div class="col">
-                                <img src="./img/mixdaily.jpeg" alt="">
+                            <div class="col ">
+                                <div class="play">
+                                    <img class="" src="./img/mixdaily.jpeg" alt="">
+                                    <div class="overlay">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <h3>Daily Mix 1</h3>
                             </div>
                             <div class="col"></div>
@@ -166,19 +251,42 @@
                             <div class="col"></div>
     
                         </div>
-                    </div>
+
 
                     <!-- most popular artists-->
-                    <div class="recently-played">
+                    <div>
                         <h2>Artisti più popolari</h2>
                         <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                    </div>
                         <div class="row">
                             <div class="col">
-                                <img src="./img/youg.jpeg" alt="">
+                                <div class="play">
+                                    <img src="./img/youg.jpeg" alt="">
+                                    <div class="overlay">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <h3>Lana del Rey</h3>   
                             </div>
                             <div class="col">
-                                <img src="./img/einaudi.jpeg" alt="">
+                                <div class="play">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <div class="overlay">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <h3>Ludovico Einaudi</h3>
                             </div>
                             <div class="col"></div>
@@ -187,8 +295,7 @@
                             <div class="col"></div>         
                         </div>
                     </div>
-
-                </div>  
+                
     
             </div>
         </div>       
@@ -220,7 +327,7 @@
                 <i class="fa-solid fa-backward-step">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                 </i>
-                <i class="fa-regular fa-circle-play">
+                <i  class="fa-regular fa-circle-play">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                 </i>
                 <i class="fa-solid fa-forward-step">
@@ -233,7 +340,14 @@
             <div class="time-bar-music">
                 <span>0:25</span>
                 <div class="music">    
-                    <div class="time-music"></div>    
+                    <div class="time-music">
+                        <span class="circle-time">
+                            <i class="fa-solid fa-circle">
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                            </i>
+                        </span>  
+                    </div>  
+                      
                 </div>
                 <span>4:35</span>
             </div>
@@ -243,19 +357,25 @@
         <div class="right-bottom-bar">
             <div class="volume-icons">
                 <i class="fa-solid fa-list">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                </i>
+                <i class="fa-solid fa-display">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            </i>
-            <i class="fa-solid fa-display">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            </i>
-            <i class="fa-solid fa-volume-high">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            </i>
+                </i>
+                <i class="fa-solid fa-volume-high">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                </i>
             </div>
             
             <div class="time-bar-music">
                 <div class="volume">    
-                    <div class="time-music"></div>    
+                    <div class="time-music">
+                        <span class="circle-time">
+                            <i class="fa-solid fa-circle">
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                            </i>
+                        </span> 
+                    </div>    
                 </div>
             </div>
         </div>
