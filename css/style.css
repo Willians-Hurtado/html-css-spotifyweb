@@ -177,9 +177,11 @@ padding-bottom: 1rem;
 
 @media screen and (max-width: 552px) {
     .side-bar{
+        text-align: center;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        max-width: 50px;
+        width: 50px;
 
         .up-side-bar{
             text-align: center;
@@ -200,6 +202,7 @@ padding-bottom: 1rem;
             display: none;
         }
         .down-side-bar{
+            
             span,
             hr{
                 display: none;
@@ -422,7 +425,17 @@ img:hover{
         padding-right: 1rem;
     }      
 }
+@media screen and (max-width:639px){
+    .time-bar-music{
+        width: 200px;
+    }
 
+    .heart-folder{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+    }
+}
 /* center bottom bar */
 .center-bottom-bar{
     width: 400px;
